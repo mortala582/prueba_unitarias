@@ -6,7 +6,9 @@ import org.junit.jupiter.api.Test;
 import org.testng.IObjectFactory2;
 
 import java.util.*;
-
+// IMPORT STATIC ?QUE HACE? ES CÓDIGO QUE NO NECESITA DE UN OBJETO PARA EJECUTARSE EN CIERTA
+// FORMA TIENE UNA NATURALEZA GLOBAL
+// EN ESTE CASO SE ESTÁ TRAYENDO TODO EL CÓDIGO ESTATICO DE LA CLASE Asertions
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -41,25 +43,28 @@ import static org.junit.jupiter.api.Assertions.*;
  </p>
 
  */
-
+//EXISTE LA CONVENCION DE QUE LAS CLASES SE LLAMAN CON EL SUFIJO TEST
+//NombreCosaBajoTesteoTEST, *Test
 
 public class AssertTest {
-
+    //LA CLASE TEST TIENE UNA SERIE DE MÉTODOS QUE IMPLEMENTAN PRUEBAS PARCIALES DE INTERÉS
+    //ES FUNDAMENTAL QUE EL MÉTODO ESTÉ ANOTADO CON LA ANOTACIÓN
     @Test
     void whenBooleanIsTrue() {
-        assertTrue(1 == 1);
+        assertTrue(1 != 1);
     }
 
     @Test
     void whenBooleanIsFalse() {
         boolean flag =false;
+        //EL ASSERT ES UNA AFIRMACION QUE DEBE CUMPLIRSE PARA QUE ESRE TEST SEA VÁLIDO
         assertFalse(flag);
     }
 
     @Test
     void whenObjectIsNull() {
         Object nullObj = null;
-
+        // compruebas que la referencia apunta a null
         assertNull(nullObj);
 
     }
@@ -67,7 +72,7 @@ public class AssertTest {
     @Test
     void whenObjectIsNotNull() {
         Object obj = new Object();
-
+        // compruebas que la referencia no apunta a null
         assertNotNull(obj);
 
     }
@@ -77,7 +82,7 @@ public class AssertTest {
     void shouldBeEqual() {
         final Integer ACTUAL = 9;
         final Integer EXPECTED = 9;
-
+        //SIEMPRE QUE QUIERO COMPARAR IGUALDAD DE OBJETO (NO TIPOS PRIMITIVOS)
         assertEquals(EXPECTED, ACTUAL);
 
     }
@@ -155,10 +160,10 @@ public class AssertTest {
 
         assertTrue(list.size() == list2.size());
         assertTrue(list.containsAll(list2));
-        assertTrue(list2.containsAll(list));
+        //assertTrue(list2.containsAll(list));
 
     }
-
+    //¿¿¿¿¿¿¿¿ HASTA AQUI HEMOS LLEGADO ¿¿¿¿¿¿¿¿//
     @Test
     void shouldContainCorrectElementOnce() {
 

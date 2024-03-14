@@ -1,5 +1,6 @@
 package org.iesvdm.tddjava.connect4;
-
+// HAY VARIAS VERSIONE DE JUNIT : 3, 4,5
+//JUNIT5 ---> VERSION JUPITER TIENE SOPORTE PARA JAVA8 FUNDAMENTALMENTE LAMBDAS
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.StringJoiner;
