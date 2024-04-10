@@ -33,7 +33,7 @@ public class Connect4TDDSpec {
 
     @Test
     public void whenTheGameStartsTheBoardIsEmpty() {
-
+        assertThat(tested.getNumberOfDiscs()).isZero().withFailMessage("Debe ser 0");
     }
 
     /*
@@ -44,6 +44,16 @@ public class Connect4TDDSpec {
 
     @Test
     public void whenDiscOutsideBoardThenRuntimeException() {
+        assertThatThrownBy(() -> tested.putDiscInColumn(7))
+                .isInstanceOf(RuntimeException.class);/*.hasMessageContaining("No more room");*/
+        assertThatThrownBy(() -> tested.putDiscInColumn(-1))
+                .isInstanceOf(RuntimeException.class);
+
+        assertThatThrownBy(() -> {
+            for (int i = 0; i < 7; i++) {
+                tested.putDiscInColumn(3);
+            }
+        }).isInstanceOf(RuntimeException.class).hasMessageContaining("No more room");
 
 
     }
@@ -51,7 +61,10 @@ public class Connect4TDDSpec {
     @Test
     public void whenFirstDiscInsertedInColumnThenPositionIsZero() {
 
-        assertThat(tested.putDiscInColumn(0)).isEqualTo(0);
+       for (int i = 0; i < 7; i++) {
+           tested.putDiscInColumn(i);
+           assertThat(tested.getNumberOfDiscs()).isEqualTo(0);
+       }
 
     }
 
@@ -62,15 +75,17 @@ public class Connect4TDDSpec {
     }
 
     @Test
-    public void whenDiscInsertedThenNumberOfDiscsIncreases() {
-
-
+    public void whenDiscInsertedThenNumberOfDiscsIncreases() { //este bien pero hay que pensar
+        int discosIniciales=0;
+        for (int i = 0; i < 7; i++) {
+            tested.putDiscInColumn(i);
+            assertThat(tested.getNumberOfDiscs()).isEqualTo(discosIniciales+1+i);
+        }
 
     }
 
     @Test
     public void whenNoMoreRoomInColumnThenRuntimeException() {
-
 
 
     }
@@ -98,7 +113,6 @@ public class Connect4TDDSpec {
 
     @Test
     public void whenAskedForCurrentPlayerTheOutputNotice() {
-
 
 
     }
