@@ -114,14 +114,39 @@ public class Connect4TDDSpec {
     @Test
     public void whenAskedForCurrentPlayerTheOutputNotice() {
 
-
-    }
+        String currentPlayer = tested.getCurrentPlayer();
+        String mensajeOutput=String.format("Player %s turn%n", currentPlayer);
+        assertThat(output.toString()).isEqualTo(mensajeOutput);
+            }
 
     @Test
     public void whenADiscIsIntroducedTheBoardIsPrinted() {
 
-    }
+        tested.putDiscInColumn(0);
+        //System.out.println(output.toString());
+        String expected = """
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |R| | | | | | |
+                """;
+        assertThat(output.toString()).isEqualTo(expected);
 
+        tested.putDiscInColumn(0);
+        String expected2 = """
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |G| | | | | | |
+                |R| | | | | | |
+                """;
+
+        assertThat(output.toString().replace(expected,"")).isEqualTo(expected2);
+
+    }
     /*
      * When no more discs can be inserted, the game finishes and it is considered a draw
      */
@@ -129,11 +154,13 @@ public class Connect4TDDSpec {
     @Test
     public void whenTheGameStartsItIsNotFinished() {
 
+            assertThat(tested.isFinished()).isEqualTo(false);
+
     }
 
     @Test
     public void whenNoDiscCanBeIntroducedTheGamesIsFinished() {
-
+           //*** llenar tablero sin que gane nadie y comprobar
     }
 
     /*
