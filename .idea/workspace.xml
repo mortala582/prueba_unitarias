@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="561063a2-7378-4c9d-bb45-d310103a949e" name="Changes" comment="COMMIT INICIAL 2">
+    <list default="true" id="561063a2-7378-4c9d-bb45-d310103a949e" name="Changes" comment="COMMIT INICIAL">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/asserts/AssertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/asserts/AssertTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/connect4/Connect4TDDSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/connect4/Connect4TDDSpec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/iesvdm/tddjava/connect4/Connect4$Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/iesvdm/tddjava/connect4/Connect4$Color.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/iesvdm/tddjava/connect4/Connect4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/iesvdm/tddjava/connect4/Connect4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/iesvdm/tddjava/connect4/Connect4TDD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/iesvdm/tddjava/connect4/Connect4TDD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/iesvdm/tddjava/ship/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/iesvdm/tddjava/ship/Direction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/iesvdm/tddjava/tictactoe/TicTacToe.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/iesvdm/tddjava/tictactoe/TicTacToe.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/connect4/Connect4TDDSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/connect4/Connect4TDDSpec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/tictactoe/TicTacToeSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/tictactoe/TicTacToeSpec.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,18 +35,20 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;mortala582&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mortala582"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mortala582/prueba_unitarias.git&quot;,
-    &quot;accountId&quot;: &quot;ab0a1a75-2e9d-4e11-ab10-b792038b8071&quot;
-  }
-}</component>
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e101430c-972c-46d9-acc9-c8bcbf2cd3d5" />
+        <option name="url" value="https://github.com/mortala582/prueba_unitarias.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -59,12 +66,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Connect4.executor": "Run",
     "JUnit.AssertTest.whenBooleanIsFalse.executor": "Run",
     "JUnit.AssertTest.whenBooleanIsTrue.executor": "Run",
+    "JUnit.Connect4TDDSpec.executor": "Run",
+    "JUnit.Connect4TDDSpec.when4Diagonal1DiscsAreConnectedThenThatPlayerWins.executor": "Run",
     "JUnit.Connect4TDDSpec.when4Diagonal2DiscsAreConnectedThenThatPlayerWins.executor": "Run",
+    "JUnit.Connect4TDDSpec.when4HorizontalDiscsAreConnectedThenThatPlayerWins.executor": "Run",
+    "JUnit.Connect4TDDSpec.when4VerticalDiscsAreConnectedThenThatPlayerWins.executor": "Run",
     "JUnit.Connect4TDDSpec.whenADiscIsIntroducedTheBoardIsPrinted.executor": "Run",
-    "JUnit.Connect4TDDSpec.whenAskedForCurrentPlayerTheOutputNotice.executor": "Run",
+    "JUnit.Connect4TDDSpec.whenDiscInsertedThenNumberOfDiscsIncreases.executor": "Run",
     "JUnit.Connect4TDDSpec.whenDiscOutsideBoardThenRuntimeException.executor": "Run",
+    "JUnit.Connect4TDDSpec.whenFirstDiscInsertedInColumnThenPositionIsZero.executor": "Run",
+    "JUnit.Connect4TDDSpec.whenFirstPlayerPlaysThenDiscColorIsRed.executor": "Run",
+    "JUnit.Connect4TDDSpec.whenNoDiscCanBeIntroducedTheGamesIsFinished.executor": "Run",
+    "JUnit.Connect4TDDSpec.whenNoMoreRoomInColumnThenRuntimeException.executor": "Run",
+    "JUnit.Connect4TDDSpec.whenSecondDiscInsertedInColumnThenPositionIsOne.executor": "Run",
+    "JUnit.Connect4TDDSpec.whenSecondPlayerPlaysThenDiscColorIsGreen.executor": "Run",
     "JUnit.Connect4TDDSpec.whenTheGameStartsItIsNotFinished.executor": "Run",
     "JUnit.Connect4TDDSpec.whenTheGameStartsTheBoardIsEmpty.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -73,13 +91,13 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "feature__branch__test__connect4",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/administrador/IdeaProjects/prueba_unitarias",
+    "last_opened_file_path": "C:/Users/usuario/IdeaProjects/tests",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
@@ -95,8 +113,8 @@
       <recent name="C:\Users\usuario\IdeaProjects\bucles\bd_persons\test_person" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Connect4TDDSpec.whenTheGameStartsItIsNotFinished">
-    <configuration name="Connect4TDDSpec.whenADiscIsIntroducedTheBoardIsPrinted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Connect4TDDSpec.when4Diagonal2DiscsAreConnectedThenThatPlayerWins">
+    <configuration name="Connect4TDDSpec.when4Diagonal1DiscsAreConnectedThenThatPlayerWins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -106,13 +124,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
-      <option name="METHOD_NAME" value="whenADiscIsIntroducedTheBoardIsPrinted" />
+      <option name="METHOD_NAME" value="when4Diagonal1DiscsAreConnectedThenThatPlayerWins" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Connect4TDDSpec.whenAskedForCurrentPlayerTheOutputNotice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Connect4TDDSpec.when4Diagonal2DiscsAreConnectedThenThatPlayerWins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -122,13 +140,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
-      <option name="METHOD_NAME" value="whenAskedForCurrentPlayerTheOutputNotice" />
+      <option name="METHOD_NAME" value="when4Diagonal2DiscsAreConnectedThenThatPlayerWins" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Connect4TDDSpec.whenDiscOutsideBoardThenRuntimeException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Connect4TDDSpec.when4HorizontalDiscsAreConnectedThenThatPlayerWins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -138,13 +156,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
-      <option name="METHOD_NAME" value="whenDiscOutsideBoardThenRuntimeException" />
+      <option name="METHOD_NAME" value="when4HorizontalDiscsAreConnectedThenThatPlayerWins" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Connect4TDDSpec.whenTheGameStartsItIsNotFinished" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Connect4TDDSpec.when4VerticalDiscsAreConnectedThenThatPlayerWins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -154,13 +172,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
-      <option name="METHOD_NAME" value="whenTheGameStartsItIsNotFinished" />
+      <option name="METHOD_NAME" value="when4VerticalDiscsAreConnectedThenThatPlayerWins" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Connect4TDDSpec.whenTheGameStartsTheBoardIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Connect4TDDSpec.whenNoDiscCanBeIntroducedTheGamesIsFinished" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -170,34 +188,33 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
-      <option name="METHOD_NAME" value="whenTheGameStartsTheBoardIsEmpty" />
+      <option name="METHOD_NAME" value="whenNoDiscCanBeIntroducedTheGamesIsFinished" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Connect4TDDSpec.whenADiscIsIntroducedTheBoardIsPrinted" />
-      <item itemvalue="JUnit.Connect4TDDSpec.whenAskedForCurrentPlayerTheOutputNotice" />
-      <item itemvalue="JUnit.Connect4TDDSpec.whenTheGameStartsItIsNotFinished" />
-      <item itemvalue="JUnit.Connect4TDDSpec.whenDiscOutsideBoardThenRuntimeException" />
-      <item itemvalue="JUnit.Connect4TDDSpec.whenTheGameStartsTheBoardIsEmpty" />
+      <item itemvalue="JUnit.Connect4TDDSpec.when4VerticalDiscsAreConnectedThenThatPlayerWins" />
+      <item itemvalue="JUnit.Connect4TDDSpec.whenNoDiscCanBeIntroducedTheGamesIsFinished" />
+      <item itemvalue="JUnit.Connect4TDDSpec.when4Diagonal1DiscsAreConnectedThenThatPlayerWins" />
+      <item itemvalue="JUnit.Connect4TDDSpec.when4Diagonal2DiscsAreConnectedThenThatPlayerWins" />
+      <item itemvalue="JUnit.Connect4TDDSpec.when4HorizontalDiscsAreConnectedThenThatPlayerWins" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Connect4TDDSpec.whenTheGameStartsItIsNotFinished" />
-        <item itemvalue="JUnit.Connect4TDDSpec.whenADiscIsIntroducedTheBoardIsPrinted" />
-        <item itemvalue="JUnit.Connect4TDDSpec.whenAskedForCurrentPlayerTheOutputNotice" />
-        <item itemvalue="JUnit.Connect4TDDSpec.whenDiscOutsideBoardThenRuntimeException" />
-        <item itemvalue="JUnit.Connect4TDDSpec.whenTheGameStartsTheBoardIsEmpty" />
+        <item itemvalue="JUnit.Connect4TDDSpec.when4Diagonal2DiscsAreConnectedThenThatPlayerWins" />
+        <item itemvalue="JUnit.Connect4TDDSpec.when4Diagonal1DiscsAreConnectedThenThatPlayerWins" />
+        <item itemvalue="JUnit.Connect4TDDSpec.when4HorizontalDiscsAreConnectedThenThatPlayerWins" />
+        <item itemvalue="JUnit.Connect4TDDSpec.when4VerticalDiscsAreConnectedThenThatPlayerWins" />
+        <item itemvalue="JUnit.Connect4TDDSpec.whenNoDiscCanBeIntroducedTheGamesIsFinished" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-48ba4555" />
       </set>
     </attachedChunks>
   </component>
@@ -220,16 +237,8 @@
       <workItem from="1709717015479" duration="5400000" />
       <workItem from="1710236719413" duration="1910000" />
       <workItem from="1710321496491" duration="1680000" />
-      <workItem from="1710417002212" duration="161000" />
-      <workItem from="1712651686381" duration="2247000" />
-      <workItem from="1712737311638" duration="287000" />
-      <workItem from="1712737640872" duration="183000" />
-      <workItem from="1712737859370" duration="6522000" />
-      <workItem from="1713342334396" duration="217000" />
-      <workItem from="1713342563801" duration="10000" />
-      <workItem from="1713342587181" duration="33000" />
-      <workItem from="1713342633978" duration="53000" />
-      <workItem from="1713947367174" duration="6514000" />
+      <workItem from="1714140135414" duration="463000" />
+      <workItem from="1714140611321" duration="39827000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT INICIAL">
       <created>1680163647182</created>
@@ -245,23 +254,7 @@
       <option name="project" value="LOCAL" />
       <updated>1680176003779</updated>
     </task>
-    <task id="LOCAL-00003" summary="COMMIT INICIAL">
-      <option name="closed" value="true" />
-      <created>1710417032167</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1710417032167</updated>
-    </task>
-    <task id="LOCAL-00004" summary="COMMIT INICIAL 2">
-      <option name="closed" value="true" />
-      <created>1712745878665</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1712745878665</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,8 +273,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="COMMIT INICIAL" />
-    <MESSAGE value="COMMIT INICIAL 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="COMMIT INICIAL 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="COMMIT INICIAL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -290,6 +282,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/tictactoe/TicTacToeSpec.java</url>
           <line>41</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/connect4/Connect4TDDSpec.java</url>
+          <line>280</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
