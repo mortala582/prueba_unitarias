@@ -161,7 +161,7 @@ public class Connect4TDDSpec {
                 |R| | | | | | |
                 """;
 
-        assertThat(output.toString().replace(expected,"")).isEqualTo(expected2);
+        assertThat(output.toString().replace("\r", "").replace(expected,"")).isEqualTo(expected2);
 
     }
     /*
