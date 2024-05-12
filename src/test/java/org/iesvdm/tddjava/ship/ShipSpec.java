@@ -95,10 +95,18 @@ public class ShipSpec {
     }
 
     public void whenReceiveCommandsLThenTurnLeft() {
+        Ship barco=new Ship(location,planet);
+        String orden="l";
+
+        assertEquals(barco.receiveCommands(orden),"O");
 
     }
 
     public void whenReceiveCommandsRThenTurnRight() {
+        Ship barco=new Ship(location,planet);
+        String orden="r";
+
+        assertEquals(barco.receiveCommands(orden),"O");
 
     }
 
