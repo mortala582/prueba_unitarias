@@ -46,6 +46,7 @@ public class FriendshipsTest {
 
     @Test
     public void joeHas5Friends() {
+
         assertEquals( 5, friendships.getFriendsList("Joe").size(), "Joe has 5 friends");
     }
 

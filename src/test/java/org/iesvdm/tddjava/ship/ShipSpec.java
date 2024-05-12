@@ -29,6 +29,8 @@ public class ShipSpec {
     public void whenInstantiatedThenLocationIsSet() {
 //        Location location = new Location(new Point(21, 13), Direction.NORTH);
 //        Ship ship = new Ship(location);
+        Ship barco=new Ship(location,planet);
+        assertEquals(barco.getLocation(),location);
 
     }
 
@@ -43,27 +45,53 @@ public class ShipSpec {
 //        assertEquals(ship.getLocation().getPoint().getX(), 22);
 //    }
 
+
     public void whenMoveForwardThenForward() {
+        Ship barco=new Ship(location,planet);
+        assertTrue(barco.moveForward(),"f");
 
     }
 
     public void whenMoveBackwardThenBackward() {
+        Ship barco=new Ship(location,planet);
+        assertTrue(barco.moveBackward(),"b");
 
     }
 
     public void whenTurnLeftThenLeft() {
+        Ship barco=new Ship(location,planet);
+        Location location1 = new Location(new Point(21, 13), Direction.WEST);
+
+        barco.turnLeft();
+        assertEquals(barco.getLocation(),location1);
+
 
     }
 
     public void whenTurnRightThenRight() {
+        Ship barco=new Ship(location,planet);
+        Location location1 = new Location(new Point(21, 13), Direction.EAST);
+
+        barco.turnRight();
+        assertEquals(barco.getLocation(),location1);
+
 
     }
 
     public void whenReceiveCommandsFThenForward() {
+        Ship barco=new Ship(location,planet);
+        String orden="f";
+
+        assertEquals(barco.receiveCommands(orden),"O");
+
 
     }
 
     public void whenReceiveCommandsBThenBackward() {
+        Ship barco=new Ship(location,planet);
+        String orden="b";
+
+        assertEquals(barco.receiveCommands(orden),"O");
     }
 
     public void whenReceiveCommandsLThenTurnLeft() {

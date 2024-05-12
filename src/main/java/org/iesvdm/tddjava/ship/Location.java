@@ -9,6 +9,7 @@ public class Location {
     private static final int BACKWARD = -1;
 
     public int getX() {
+
         return point.getX();
     }
 
@@ -18,11 +19,13 @@ public class Location {
 
     private Point point;
     public Point getPoint() {
+
         return point;
     }
 
     private Direction direction;
     public Direction getDirection() {
+
         return this.direction;
     }
     public void setDirection(Direction direction) {
@@ -35,6 +38,7 @@ public class Location {
     }
 
     public boolean forward() {
+
         return move(FORWARD, new Point(100, 100), new ArrayList<>());
     }
     public boolean forward(Point max) {
@@ -80,12 +84,14 @@ public class Location {
     }
 
     private boolean isObstacle(Point point, List<Point> obstacles) {
-        for (Point obstacle : obstacles) {
+           for (Point obstacle : obstacles) {
             if (obstacle.getX() == point.getX() && obstacle.getY() == point.getY()) {
                 return true;
+
             }
         }
         return false;
+
     }
 
     private int wrap(int point, int maxPoint) {
@@ -103,11 +109,14 @@ public class Location {
         this.direction = direction.turnLeft();
     }
 
-    public void turnRight() {
+    public void turnRight()
+    {
         this.direction = direction.turnRight();
     }
 
-    public Location copy() {
+    public Location copy()
+    {
+
         return new Location(new Point(point.getX(), point.getY()), direction);
     }
 

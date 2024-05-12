@@ -24,11 +24,13 @@ public class FriendshipsHamcrestTest {
 
     @Test
     public void alexDoesNotHaveFriends() {
+
         assertThat(friendships.getFriendsList("Alex"), empty());
     }
 
     @Test
     public void joeHas5Friends() {
+
         assertThat(friendships.getFriendsList("Joe"), hasSize(5));
     }
 
