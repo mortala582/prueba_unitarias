@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="561063a2-7378-4c9d-bb45-d310103a949e" name="Changes" comment="COMMIT INICIAL">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_5_24_12_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_5_24_12_10__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_5_24_13_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_5_24_13_05__Changes_.xml" afterDir="false" />
+    <list default="true" id="561063a2-7378-4c9d-bb45-d310103a949e" name="Changes" comment="COMMIT casi final, faltan 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/connect4/Connect4TDDSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/connect4/Connect4TDDSpec.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/ShipSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/ShipSpec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/connect4/Connect4TDDSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/connect4/Connect4TDDSpec.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/ship/ShipSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/ship/ShipSpec.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +97,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "feature__branch__test__connect4",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/usuario/IdeaProjects/tests",
+    "last_opened_file_path": "C:/Users/Teresa/IdeaProjects/prueba_unitarias",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -119,21 +119,35 @@
       <recent name="C:\Users\usuario\IdeaProjects\bucles\bd_persons\test_person" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ShipSpec.whenReceiveCommandsThenOForOkAndXForObstacle">
-    <configuration name="ShipSpec.givenDirectionEAndXEquals1WhenReceiveCommandsBThenWrap" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Connect4TDDSpec.whenDiscOutsideBoardThenRuntimeException">
+    <configuration name="Connect4TDDSpec.whenDiscOutsideBoardThenRuntimeException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
+          <option name="PATTERN" value="org.iesvdm.tddjava.connect4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.ShipSpec" />
-      <option name="METHOD_NAME" value="givenDirectionEAndXEquals1WhenReceiveCommandsBThenWrap" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
+      <option name="METHOD_NAME" value="whenDiscOutsideBoardThenRuntimeException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Connect4TDDSpec.whenTheGameStartsTheBoardIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test_person" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvdm.tddjava.connect4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
+      <option name="METHOD_NAME" value="whenTheGameStartsTheBoardIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,24 +163,6 @@
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.ShipSpec" />
       <option name="METHOD_NAME" value="givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShipSpec.whenReceiveCommandsThenAllAreExecuted" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_person" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.ShipSpec" />
-      <option name="METHOD_NAME" value="whenReceiveCommandsThenAllAreExecuted" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -211,19 +207,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.ShipSpec.givenDirectionEAndXEquals1WhenReceiveCommandsBThenWrap" />
+      <item itemvalue="JUnit.Connect4TDDSpec.whenDiscOutsideBoardThenRuntimeException" />
+      <item itemvalue="JUnit.Connect4TDDSpec.whenTheGameStartsTheBoardIsEmpty" />
       <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsThenOForOkAndXForObstacle" />
       <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsThenStopOnObstacle" />
       <item itemvalue="TestNG.ShipSpec.givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap" />
-      <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsThenAllAreExecuted" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Connect4TDDSpec.whenDiscOutsideBoardThenRuntimeException" />
+        <item itemvalue="JUnit.Connect4TDDSpec.whenTheGameStartsTheBoardIsEmpty" />
         <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsThenOForOkAndXForObstacle" />
         <item itemvalue="TestNG.ShipSpec.givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap" />
         <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsThenStopOnObstacle" />
-        <item itemvalue="TestNG.ShipSpec.givenDirectionEAndXEquals1WhenReceiveCommandsBThenWrap" />
-        <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsThenAllAreExecuted" />
       </list>
     </recent_temporary>
   </component>
@@ -257,6 +253,7 @@
       <workItem from="1714140611321" duration="40179000" />
       <workItem from="1715613855128" duration="676000" />
       <workItem from="1715660851903" duration="5899000" />
+      <workItem from="1715714370326" duration="1248000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT INICIAL">
       <created>1680163647182</created>
@@ -296,7 +293,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715543190065</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="COMMIT casi final, faltan 4">
+      <option name="closed" value="true" />
+      <created>1715701960947</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715701960947</updated>
+    </task>
+    <task id="LOCAL-00007" summary="COMMIT casi final, faltan 2">
+      <option name="closed" value="true" />
+      <created>1715702020511</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715702020511</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +342,9 @@
     <MESSAGE value="COMMIT FINAL" />
     <MESSAGE value="COMMIT casi final, faltan 6" />
     <MESSAGE value="COMMIT INICIAL" />
-    <option name="LAST_COMMIT_MESSAGE" value="COMMIT INICIAL" />
+    <MESSAGE value="COMMIT casi final, faltan 4" />
+    <MESSAGE value="COMMIT casi final, faltan 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="COMMIT casi final, faltan 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
