@@ -192,7 +192,7 @@ public class ShipSpec {
         String orden="r";
 
         assertEquals(barco.receiveCommands(orden),"X");
-
+    /*
 
     }
     }
