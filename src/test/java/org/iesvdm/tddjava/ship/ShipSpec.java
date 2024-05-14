@@ -172,25 +172,29 @@ public class ShipSpec {
         assertEquals(barco.getLocation(),locdev);
 
     }
-
+    // este tampoco lo consigo
     public void whenReceiveCommandsThenStopOnObstacle() {
-        List<Point> obstacles = new ArrayList<>();
-        obstacles.add(new Point(44, 44));
-        obstacles.add(new Point(45, 46));
-        obstacles.add(new Point(21, 13));
+//        List<Point> obstacles = new ArrayList<>();
+//        obstacles.add(new Point(44, 44));
+//        obstacles.add(new Point(45, 46));
+//        obstacles.add(new Point(21, 13));
         Ship barco=new Ship(location,planet);
         String orden="l";
 
         assertEquals(barco.receiveCommands(orden),"O");
     }
-
+    // no consigo este
     public void whenReceiveCommandsThenOForOkAndXForObstacle() {
         List<Point> obstacles = new ArrayList<>();
-        obstacles.add(new Point(21, 13));
+        obstacles.add(new Point(20, 12));
+        location = new Location(new Point(55, 10), Direction.EAST);
         Ship barco=new Ship(location,planet);
-        String orden="l";
+        String orden="r";
 
         assertEquals(barco.receiveCommands(orden),"X");
+
+
+    }
     }
 
-}
+

@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="561063a2-7378-4c9d-bb45-d310103a949e" name="Changes" comment="COMMIT INICIAL">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_5_24_12_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_5_24_12_10__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_5_24_13_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_5_24_13_05__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/ShipSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/ShipSpec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/connect4/Connect4TDDSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/connect4/Connect4TDDSpec.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/ship/ShipSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/ship/ShipSpec.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +85,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.ShipSpec.givenDirectionEAndXEquals1WhenReceiveCommandsBThenWrap.executor": "Debug",
-    "TestNG.ShipSpec.givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap.executor": "Debug",
+    "TestNG.ShipSpec.givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap.executor": "Run",
     "TestNG.ShipSpec.whenInstantiatedThenPlanetIsStored.executor": "Run",
     "TestNG.ShipSpec.whenReceiveCommandsBThenBackward.executor": "Run",
     "TestNG.ShipSpec.whenReceiveCommandsFThenForward.executor": "Run",
@@ -219,9 +220,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsThenOForOkAndXForObstacle" />
+        <item itemvalue="TestNG.ShipSpec.givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap" />
         <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsThenStopOnObstacle" />
         <item itemvalue="TestNG.ShipSpec.givenDirectionEAndXEquals1WhenReceiveCommandsBThenWrap" />
-        <item itemvalue="TestNG.ShipSpec.givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap" />
         <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsThenAllAreExecuted" />
       </list>
     </recent_temporary>
@@ -365,11 +366,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
           <line>44</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
@@ -415,21 +411,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
-          <line>88</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
           <line>78</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
@@ -437,6 +418,41 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
           <line>80</line>
           <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Ship.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Ship.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Ship.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
