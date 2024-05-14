@@ -20,7 +20,7 @@ public class ShipSpec {
         Point max = new Point(50, 50);
         location = new Location(new Point(21, 13), Direction.NORTH);
         List<Point> obstacles = new ArrayList<>();
-        obstacles.add(new Point(44, 44));
+        obstacles.add(new Point(21, 13));
         obstacles.add(new Point(45, 46));
         planet = new Planet(max, obstacles);
 //        ship = new Ship(location);
@@ -145,7 +145,7 @@ public class ShipSpec {
     }
 
     public void givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap() {
-        List<Point> obstacles = null;
+        List<Point> obstacles = new ArrayList<>();
         Point max = new Point(55, 55);
         obstacles.add(new Point(12, 36));
         Planet planet= new Planet(max, obstacles);
@@ -162,14 +162,35 @@ public class ShipSpec {
     }
 
     public void givenDirectionEAndXEquals1WhenReceiveCommandsBThenWrap() {
+        Location locdev = new Location(new Point(1, 10), Direction.EAST);
+        String orden="b";
+        location = new Location(new Point(55, 10), Direction.EAST);
+        Ship barco=new Ship(location,planet);
+
+        assertEquals(barco.receiveCommands(orden),"O");
+        assertEquals(locdev,barco.getLocation());
+        assertEquals(barco.getLocation(),locdev);
 
     }
 
     public void whenReceiveCommandsThenStopOnObstacle() {
+        List<Point> obstacles = new ArrayList<>();
+        obstacles.add(new Point(44, 44));
+        obstacles.add(new Point(45, 46));
+        obstacles.add(new Point(21, 13));
+        Ship barco=new Ship(location,planet);
+        String orden="l";
+
+        assertEquals(barco.receiveCommands(orden),"O");
     }
 
     public void whenReceiveCommandsThenOForOkAndXForObstacle() {
+        List<Point> obstacles = new ArrayList<>();
+        obstacles.add(new Point(21, 13));
+        Ship barco=new Ship(location,planet);
+        String orden="l";
 
+        assertEquals(barco.receiveCommands(orden),"X");
     }
 
 }
