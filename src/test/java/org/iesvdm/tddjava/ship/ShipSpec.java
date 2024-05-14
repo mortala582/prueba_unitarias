@@ -1,5 +1,6 @@
 package org.iesvdm.tddjava.ship;
 
+import net.bytebuddy.build.HashCodeAndEqualsPlugin;
 import org.testng.annotations.*;
 
 import java.util.ArrayList;
@@ -29,6 +30,8 @@ public class ShipSpec {
     public void whenInstantiatedThenLocationIsSet() {
 //        Location location = new Location(new Point(21, 13), Direction.NORTH);
 //        Ship ship = new Ship(location);
+        Ship barco=new Ship(location,planet);
+        assertEquals(barco.getLocation(),location);
 
     }
 
@@ -43,38 +46,88 @@ public class ShipSpec {
 //        assertEquals(ship.getLocation().getPoint().getX(), 22);
 //    }
 
+
     public void whenMoveForwardThenForward() {
+        Ship barco=new Ship(location,planet);
+        assertTrue(barco.moveForward(),"f");
 
     }
 
     public void whenMoveBackwardThenBackward() {
+        Ship barco=new Ship(location,planet);
+        assertTrue(barco.moveBackward(),"b");
 
     }
 
     public void whenTurnLeftThenLeft() {
+        Ship barco=new Ship(location,planet);
+        Location location1 = new Location(new Point(21, 13), Direction.WEST);
+
+        barco.turnLeft();
+        assertEquals(barco.getLocation(),location1);
+
 
     }
 
     public void whenTurnRightThenRight() {
+        Ship barco=new Ship(location,planet);
+        Location location1 = new Location(new Point(21, 13), Direction.EAST);
+
+        barco.turnRight();
+        assertEquals(barco.getLocation(),location1);
+
 
     }
 
     public void whenReceiveCommandsFThenForward() {
+        Ship barco=new Ship(location,planet);
+        Location location1 = new Location(new Point(21, 12), Direction.NORTH);
+        String orden="f";
+        assertEquals(barco.receiveCommands(orden), "O");
+        assertEquals(barco.getLocation(),location1);
+
 
     }
 
     public void whenReceiveCommandsBThenBackward() {
+        Ship barco=new Ship(location,planet);
+        Location location1 = new Location(new Point(21, 14), Direction.NORTH);
+        String orden="b";
+
+        assertEquals(barco.receiveCommands(orden),"O");
+        assertEquals(barco.getLocation(),location1);
     }
 
     public void whenReceiveCommandsLThenTurnLeft() {
+        Ship barco=new Ship(location,planet);
+        Location location1 = new Location(new Point(21, 13), Direction.WEST);
+        String orden="l";
+
+        assertEquals(barco.receiveCommands(orden),"O");
+        assertEquals(barco.getLocation(),location1);
 
     }
 
     public void whenReceiveCommandsRThenTurnRight() {
+        Ship barco=new Ship(location,planet);
+        Location location1 = new Location(new Point(21, 13), Direction.EAST);
+        String orden="r";
+
+        assertEquals(barco.receiveCommands(orden),"O");
+        assertEquals(barco.getLocation(),location1);
 
     }
 
     public void whenReceiveCommandsThenAllAreExecuted() {
+        Ship barco=new Ship(location,planet);
+        String orden="f";
+        assertEquals(barco.receiveCommands(orden),"O");
+        String orden1="b";
+        assertEquals(barco.receiveCommands(orden),"O");
+        String orden2="l";
+        assertEquals(barco.receiveCommands(orden),"O");
+        String orden3="r";
+        assertEquals(barco.receiveCommands(orden),"O");
 
     }
 
@@ -82,10 +135,29 @@ public class ShipSpec {
 //        Point max = new Point(50, 50);
 //        Planet planet = new Planet(max);
 //        ship = new Ship(location, planet);
+        Point max = new Point(55, 55);
+        Planet planet = new Planet(max);
+        location = new Location(new Point(20, 10), Direction.NORTH);
+        Ship barco=new Ship(location,planet);
 
+        assertEquals(barco.getLocation(),location);
+        assertEquals(barco.getPlanet(),planet);
     }
 
     public void givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap() {
+        List<Point> obstacles = null;
+        Point max = new Point(55, 55);
+        obstacles.add(new Point(12, 36));
+        Planet planet= new Planet(max, obstacles);
+        location = new Location(new Point(55, 10), Direction.EAST);
+        Ship barco=new Ship(location,planet);
+        Location locdev = new Location(new Point(1, 10), Direction.EAST);
+        String orden="f";
+
+        assertEquals(barco.receiveCommands(orden),"O");
+        assertEquals(locdev,barco.getLocation());
+        assertEquals(barco.getLocation(),locdev);
+
 
     }
 

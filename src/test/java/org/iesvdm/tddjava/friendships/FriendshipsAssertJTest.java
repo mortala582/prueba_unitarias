@@ -24,6 +24,7 @@ public class FriendshipsAssertJTest {
 
     @Test
     public void alexDoesNotHaveFriends() {
+
         assertThat(friendships.getFriendsList("Alex")).isEmpty();
     }
 
