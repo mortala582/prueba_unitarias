@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="561063a2-7378-4c9d-bb45-d310103a949e" name="Changes" comment="COMMIT FINAL" />
+    <list default="true" id="561063a2-7378-4c9d-bb45-d310103a949e" name="Changes" comment="COMMIT casi final, faltan 6">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/ShipSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/ShipSpec.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,12 +28,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "mortala582"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mortala582&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -78,6 +81,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.ShipSpec.givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap.executor": "Debug",
+    "TestNG.ShipSpec.whenInstantiatedThenPlanetIsStored.executor": "Run",
+    "TestNG.ShipSpec.whenReceiveCommandsBThenBackward.executor": "Run",
+    "TestNG.ShipSpec.whenReceiveCommandsFThenForward.executor": "Run",
+    "TestNG.ShipSpec.whenReceiveCommandsLThenTurnLeft.executor": "Run",
+    "TestNG.ShipSpec.whenReceiveCommandsRThenTurnRight.executor": "Run",
+    "TestNG.ShipSpec.whenReceiveCommandsThenAllAreExecuted.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "feature__branch__test__connect4",
     "kotlin-language-version-configured": "true",
@@ -103,101 +113,111 @@
       <recent name="C:\Users\usuario\IdeaProjects\bucles\bd_persons\test_person" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Connect4TDDSpec.when4Diagonal2DiscsAreConnectedThenThatPlayerWins">
-    <configuration name="Connect4TDDSpec.when4Diagonal1DiscsAreConnectedThenThatPlayerWins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ShipSpec.givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap">
+    <configuration name="ShipSpec.givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.iesvdm.tddjava.connect4.*" />
+          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
-      <option name="METHOD_NAME" value="when4Diagonal1DiscsAreConnectedThenThatPlayerWins" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.ShipSpec" />
+      <option name="METHOD_NAME" value="givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Connect4TDDSpec.when4Diagonal2DiscsAreConnectedThenThatPlayerWins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShipSpec.whenInstantiatedThenPlanetIsStored" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.iesvdm.tddjava.connect4.*" />
+          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
-      <option name="METHOD_NAME" value="when4Diagonal2DiscsAreConnectedThenThatPlayerWins" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.ShipSpec" />
+      <option name="METHOD_NAME" value="whenInstantiatedThenPlanetIsStored" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Connect4TDDSpec.when4HorizontalDiscsAreConnectedThenThatPlayerWins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShipSpec.whenReceiveCommandsLThenTurnLeft" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.iesvdm.tddjava.connect4.*" />
+          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
-      <option name="METHOD_NAME" value="when4HorizontalDiscsAreConnectedThenThatPlayerWins" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.ShipSpec" />
+      <option name="METHOD_NAME" value="whenReceiveCommandsLThenTurnLeft" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Connect4TDDSpec.when4VerticalDiscsAreConnectedThenThatPlayerWins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShipSpec.whenReceiveCommandsRThenTurnRight" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.iesvdm.tddjava.connect4.*" />
+          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
-      <option name="METHOD_NAME" value="when4VerticalDiscsAreConnectedThenThatPlayerWins" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.ShipSpec" />
+      <option name="METHOD_NAME" value="whenReceiveCommandsRThenTurnRight" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Connect4TDDSpec.whenNoDiscCanBeIntroducedTheGamesIsFinished" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShipSpec.whenReceiveCommandsThenAllAreExecuted" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.iesvdm.tddjava.connect4.*" />
+          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
-      <option name="METHOD_NAME" value="whenNoDiscCanBeIntroducedTheGamesIsFinished" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.ShipSpec" />
+      <option name="METHOD_NAME" value="whenReceiveCommandsThenAllAreExecuted" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Connect4TDDSpec.when4VerticalDiscsAreConnectedThenThatPlayerWins" />
-      <item itemvalue="JUnit.Connect4TDDSpec.whenNoDiscCanBeIntroducedTheGamesIsFinished" />
-      <item itemvalue="JUnit.Connect4TDDSpec.when4Diagonal1DiscsAreConnectedThenThatPlayerWins" />
-      <item itemvalue="JUnit.Connect4TDDSpec.when4Diagonal2DiscsAreConnectedThenThatPlayerWins" />
-      <item itemvalue="JUnit.Connect4TDDSpec.when4HorizontalDiscsAreConnectedThenThatPlayerWins" />
+      <item itemvalue="TestNG.ShipSpec.givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap" />
+      <item itemvalue="TestNG.ShipSpec.whenInstantiatedThenPlanetIsStored" />
+      <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsLThenTurnLeft" />
+      <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsRThenTurnRight" />
+      <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsThenAllAreExecuted" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Connect4TDDSpec.when4Diagonal2DiscsAreConnectedThenThatPlayerWins" />
-        <item itemvalue="JUnit.Connect4TDDSpec.when4Diagonal1DiscsAreConnectedThenThatPlayerWins" />
-        <item itemvalue="JUnit.Connect4TDDSpec.when4HorizontalDiscsAreConnectedThenThatPlayerWins" />
-        <item itemvalue="JUnit.Connect4TDDSpec.when4VerticalDiscsAreConnectedThenThatPlayerWins" />
-        <item itemvalue="JUnit.Connect4TDDSpec.whenNoDiscCanBeIntroducedTheGamesIsFinished" />
+        <item itemvalue="TestNG.ShipSpec.givenDirectionEAndXEqualsMaxXWhenReceiveCommandsFThenWrap" />
+        <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsThenAllAreExecuted" />
+        <item itemvalue="TestNG.ShipSpec.whenInstantiatedThenPlanetIsStored" />
+        <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsRThenTurnRight" />
+        <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsLThenTurnLeft" />
       </list>
     </recent_temporary>
   </component>
@@ -229,6 +249,8 @@
       <workItem from="1710321496491" duration="1680000" />
       <workItem from="1714140135414" duration="463000" />
       <workItem from="1714140611321" duration="40179000" />
+      <workItem from="1715613855128" duration="676000" />
+      <workItem from="1715660851903" duration="5899000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT INICIAL">
       <created>1680163647182</created>
@@ -260,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714295892020</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="COMMIT casi final, faltan 6">
+      <option name="closed" value="true" />
+      <created>1715543190065</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715543190065</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +322,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="COMMIT INICIAL" />
     <MESSAGE value="COMMIT FINAL" />
-    <option name="LAST_COMMIT_MESSAGE" value="COMMIT FINAL" />
+    <MESSAGE value="COMMIT casi final, faltan 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="COMMIT casi final, faltan 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -301,6 +332,136 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/tictactoe/TicTacToeSpec.java</url>
           <line>41</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/ShipSpec.java</url>
+          <line>156</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/ShipSpec.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Ship.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Ship.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>96</line>
+          <properties class="org.iesvdm.tddjava.ship.Location" method="wrap">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>39</line>
+          <properties class="org.iesvdm.tddjava.ship.Location" method="forward">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>46</line>
+          <properties class="org.iesvdm.tddjava.ship.Location" method="forward">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Location.java</url>
+          <line>50</line>
+          <properties class="org.iesvdm.tddjava.ship.Location" method="backward">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tddjava/ship/Ship.java</url>
+          <line>22</line>
+          <properties class="org.iesvdm.tddjava.ship.Ship" method="moveForward">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
